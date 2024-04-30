@@ -80,6 +80,7 @@ const Contact = () => {
                   autoComplete="off"
                   required
                   className="p-2 bg-transparent border-[1px] border-black rounded-md text-black placeholder-black focus:outline-none"
+                  style={{ resize: "none" }}
                 ></textarea>
               );
             })}

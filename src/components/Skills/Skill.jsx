@@ -14,7 +14,7 @@ const Skill = ({ data }) => {
             >
               <div className="border-[1px] border-black flex  shadow-md  backdrop-blur-sm rounded-full w-24 h-24 ">
                 <div
-                  className={`m-auto rounded-full w-20 h-24 flex justify-center items-center `}
+                  className={`m-auto w-20 h-24 flex justify-center items-center `}
                 >
                   <img className="rounded-full" src={child} alt="skill" />
                 </div>

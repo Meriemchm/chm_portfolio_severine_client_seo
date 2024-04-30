@@ -128,10 +128,22 @@ export const Navlink = [
   },
 ];
 
+function supportsWebP() {
+  const elem = document.createElement('canvas');
+
+  if (!!(elem.getContext && elem.getContext('2d'))) {
+    // was able or not to get WebP representation
+    return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+  }
+
+  // very old browser like IE 8, canvas not supported
+  return false;
+}
+
 export const projects = [
   {
     id: 1,
-    src: "bookimg.JPG",
+    src: supportsWebP() ? "bookimg.webp" : "bookimg.jpg",
     title: "Booki",
     description:
       "L'objectif était d'intégrer la maquette d'un site de planification de vacances nommé 'Booki', en respectant les spécifications fonctionnelles et techniques.",
@@ -141,7 +153,7 @@ export const projects = [
   },
   {
     id: 2,
-    src: "sofie.JPG",
+    src: supportsWebP() ?  "sofie.webp" : "sofie.JPG",
     title: "Sophie Bluel",
     description:
       "L’objectif était de concevoir le site portfolio d'une architecte d'intérieur et de le rendre dynamique en utilisant JavaScript. Le site devait permettre de faire un tri des projets par catégorie dans la galerie, mais aussi de reprendre dynamiquement les données des travaux de l’architecte via une API. Il devait également permettre à l'architecte de se connecter pour éditer son site. Pour finir, ce site devait être constitué d'une modale lui permettant de gérer ses projets : ajout, suppression de projet,...",
@@ -152,7 +164,7 @@ export const projects = [
 
   {
     id: 3,
-    src: "kasaimg.JPG",
+    src: supportsWebP() ? "kasaimg.webp" :  "kasaimg.JPG",
     title: "Kasa",
     description:
       "Ce projet captivant a consisté à créer la plateforme web pour Kasa, une entreprise spécialisée dans la location d'appartements entre particuliers. J'ai développé la plateforme en concevant le routeur et les différentes pages, grâce à React. J'ai créé un carrousel, utilisé des composants réutilisables, et mis en place une gestion des tests...",
@@ -162,7 +174,7 @@ export const projects = [
   },
   {
     id: 4,
-    src: "qwentaimg.JPG",
+    src: supportsWebP() ? "qwentaimg.webp" : "qwentaimg.JPG",
     title: "Qwenta",
     description:
       "Je devais mettre en place une veille informationnelle avec un outil prévu à cet effet (voir Demo), mais aussi mettre en place les spécifications techniques à partir des spécifications fonctionnelles, de la maquette ainsi que des user stories. Je devais également mettre en place un kanban pour la mission avec l'outil de mon choix.",

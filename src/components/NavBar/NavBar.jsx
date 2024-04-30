@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { Navlink } from "../Data/Data";
 import { Link as Links } from "react-router-dom";
-import profile from "../../assets/PNG.png"
+
 const NavBar = () => {
   const [show, setShow] = useState(false);
 
@@ -11,7 +11,7 @@ const NavBar = () => {
     <div
       className={`bg-white flex justify-between items-center w-full h-20  px-4 md:px-20 fixed z-10`}
     >
-      <img src={profile} className="" alt="profile" />
+      <img src="PNG.png"  alt="profile"  />
 
       <ul className="hidden 2xl:flex items-center">
         {Navlink.map(({ id, link }) => {
@@ -27,12 +27,14 @@ const NavBar = () => {
             </li>
           );
         })}
+        <li>
         <button className="bg-primary text-white px-5 py-2 rounded-lg duration-200 hover:scale-105 lg:hidden hidden 2xl:block ml-5">
           {" "}
           <Links rel="nofollow" to="/Rendez-vous" duration={500}>
             Rendez-vous
           </Links>
         </button>
+        </li>
       </ul>
 
       <div
@@ -42,7 +44,7 @@ const NavBar = () => {
         {show ? (
           <FaTimes size={30} className="text-white" />
         ) : (
-          <FaBars size={30} className="text-gray-500" />
+          <FaBars size={30} className="text-black" />
         )}
       </div>
       {show && (

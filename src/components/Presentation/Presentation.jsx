@@ -13,7 +13,7 @@ const Presentation = () => {
           <h2 className="text-4xl md:text-7xl font-bold py-5 ">
             Allagui Séverine
           </h2>
-          <p className="text-primary text-right">
+          <p className="text-primary text-right text-sm md:text-lg" rel="preload">
             Spécialisée dans la communication et le développement web
           </p>
         </div>

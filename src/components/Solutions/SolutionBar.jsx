@@ -18,7 +18,7 @@ const SolutionBar = () => {
                     
                       `}
                 >
-                  <img className="h-14 " src={item.icon} alt="icon" />
+                  <img className=" " src={item.icon} alt="icon" />
                   
                 </div>
                 <p className={`text-center capitalize text-white text-sm md:text-base`}>

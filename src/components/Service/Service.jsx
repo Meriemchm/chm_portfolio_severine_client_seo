@@ -22,7 +22,7 @@ const Service = ({ data, Title }) => {
                 <div
                   className={`m-auto  w-24 h-24 flex justify-center items-center  `}
                 >
-                  <img className="self-center" src={src} alt="service" />
+                  <img className="" src={src} alt="service" />
                 </div>
               </div>
               <p className={`py-5 mt-4 text-bold text-xl ${textStyle}`}>{title}</p>
