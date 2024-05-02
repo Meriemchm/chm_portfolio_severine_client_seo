@@ -1,16 +1,21 @@
 import React from "react";
-import NavBar from "../NavBar/NavBar";
-import Presentation from "../Presentation/Presentation";
-import About from "../About/About";
-import Contact from "../Contact/Contact";
-import Skills from "../Skills/Skills";
-import SavoirFaire from "../SavoirFaire/SavoirFaire";
-import Solutions from "../Solutions/Solutions";
-import Projects from "../Projects/Projects";
+import { Helmet } from 'react-helmet-async';
+const NavBar = React.lazy(() => import("../NavBar/NavBar"));
+const Presentation = React.lazy(() => import("../Presentation/Presentation"));
+const About = React.lazy(() => import("../About/About"));
+const Contact = React.lazy(() => import("../Contact/Contact"));
+const Skills = React.lazy(() => import("../Skills/Skills"));
+const SavoirFaire = React.lazy(() => import("../SavoirFaire/SavoirFaire"));
+const Solutions = React.lazy(() => import("../Solutions/Solutions"));
+const Projects = React.lazy(() => import("../Projects/Projects"));
+
 
 const Home = () => {
   return (
     <div>
+      <Helmet>
+          <title>Accueil - Allagui Séverine</title>
+      </Helmet>
       <NavBar />
       <Presentation />
       <About />

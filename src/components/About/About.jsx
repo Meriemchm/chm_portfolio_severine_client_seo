@@ -1,5 +1,5 @@
 import React from "react";
-import { links } from "../Data/Data";
+import { links,profileImage } from "../Data/Data";
 import { Link } from "react-scroll";
 const About = () => {
   return (
@@ -99,11 +99,19 @@ const About = () => {
           </div>
         </div>
         <div className="bg-primary rounded-lg md:flex items-center justify-center p-2 md:w-[20rem] h-[20rem] w-[15rem]  md:h-[23rem] relative mb-16">
-          <img
-            src="profile.png"
-            alt="MyProfile"
-            className="rounded-lg mx-auto md:w-[20rem] h-[20rem] w-[15rem] md:h-[23rem] object-cover  absolute -top-8 -left-4"
-          />
+        {profileImage.map(({ id, src }) => {
+                return (
+                  <img
+                  loading="lazy"
+                  key = {id}
+                  src={src}
+                  alt="ma_photo_de_profil"
+                  className="rounded-lg mx-auto md:w-[20rem] h-[20rem] w-[15rem] md:h-[23rem] object-cover  absolute -top-8 -left-4"
+                />
+
+                );
+              })}
+
         </div>
       </div>
     </div>

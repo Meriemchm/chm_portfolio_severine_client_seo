@@ -3,9 +3,7 @@ import { projects } from "../Data/Data";
 import { AiFillGithub } from "react-icons/ai";
 import { CiShare1 } from "react-icons/ci";
 import { Worker, Viewer } from "@react-pdf-viewer/core";
-import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
 import { FaTimes } from "react-icons/fa";
-import "@react-pdf-viewer/core/lib/styles/index.css";
 
 const Project = () => {
   const [showPDF, setShowPDF] = useState(false);

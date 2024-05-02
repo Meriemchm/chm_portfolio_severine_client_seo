@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/PNG-white.png" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Ajout de meta-description -->
-
     <meta name="description"
-    content="Je m’appelle Allagui Séverine. communication et developpement web">
-
+    content="Web développeur à Thionville, je m’appelle Séverine Allagui. Je suis spécialisée dans le
+    développement de sites web, la création de logo, le conseil en communication et
+    marketing.
+    Je peux réaliser un produit, beau, utile, et vivant, afin que vos clients vous identifient
+    facilement, vous mémorisent et vous apprécient.">
+    <meta name="keywords" content="Séverine Allagui, prise de rendez-vous, services, professionnelle, rendez-vous en ligne, conseil en communication,développement de sites web">
     <title>Portfolio | Allagui Séverine</title>
+
+    <meta property="og:title" content="Allagui Séverine">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://allagui-severine.com">
+    <meta property="og:image" content="profile.webp">
+    <meta property="og:description"
+      content="Web développeur à Thionville, je m’appelle Séverine Allagui. Je suis spécialisée dans le
+      développement de sites web, la création de logo, le conseil en communication et
+      marketing.
+      Je peux réaliser un produit, beau, utile, et vivant, afin que vos clients vous identifient
+      facilement, vous mémorisent et vous apprécient.">
+    <meta property="og:site_name" content="Allagui Séverine">
+    <meta property="og:locale" content="fr_FR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://allagui-severine.com">
+    <meta name="twitter:title" content="Allagui Séverine">
+    <meta name="twitter:description"
+      content="Web développeur à Thionville, je m’appelle Séverine Allagui. Je suis spécialisée dans le
+      développement de sites web, la création de logo, le conseil en communication et
+      marketing.
+      Je peux réaliser un produit, beau, utile, et vivant, afin que vos clients vous identifient
+      facilement, vous mémorisent et vous apprécient.">
+    <meta name="twitter:creator" content="@">
+    <meta name="twitter:image" content="profile.webp">
+
+
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" async></script>
     <script>
-      AOS.init();
+        document.addEventListener('DOMContentLoaded', function() {
+          AOS.init({
+      disable: 'mobile'
+    });
+        });
     </script>
   </body>
 </html>

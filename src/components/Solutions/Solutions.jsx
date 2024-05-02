@@ -1,6 +1,5 @@
 import React from "react";
-import SolutionBar from "./SolutionBar";
-
+const SolutionBar = React.lazy(() => import('./SolutionBar'));
 const Solutions = () => {
   return (
     <div data-aos="fade-up" name="solutions" className="md:px-20 mx-auto p-4 flex flex-col  h-full w-full ">

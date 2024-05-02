@@ -1,5 +1,6 @@
 import React from "react";
-import Skill from "./Skill";
+
+const Skill = React.lazy(() => import('./Skill'));
 import { techs } from "../Data/Data";
 const Skills = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Service from "../Service/Service";
+const Service = React.lazy(() => import('../Service/Service'));
 import { services } from "../Data/Data";
 const SavoirFaire = () => {
   return (

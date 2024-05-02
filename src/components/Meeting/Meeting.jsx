@@ -1,8 +1,13 @@
 import React from "react";
-import MeetingContainer from "./MeetingContainer";
+import { Helmet } from 'react-helmet-async';
+import MeetingContainer from './MeetingContainer';
 
 const Meeting = () => {
   return (
+    <div>            
+    <Helmet>
+    <title>Prenez rendez-vous</title>
+    </Helmet>
     <div
     
       className="md:px-20 mx-auto p-4 flex flex-col  h-full w-full"
@@ -15,6 +20,7 @@ const Meeting = () => {
       </div>
 
       <MeetingContainer />
+    </div>
     </div>
   );
 };

@@ -1,6 +1,21 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
+
+function  supportsWebP () {
+  const elem = document.createElement('canvas');
+
+  if (!!(elem.getContext && elem.getContext('2d'))) {
+    return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+  }
+  return false;
+}
+
+export const profileImage = [  {
+  id: 1,
+  src : supportsWebP() ? "profile.webp" : "profile.png"
+},]
+
 export const techs = [
   {
     id: 1,
@@ -39,7 +54,7 @@ export const techs = [
   },
   {
     id: 6,
-    child: "nodejs.png",
+    child: supportsWebP() ? "nodejs.webp" : "nodejs.png",
     title: "Node.js",
     style: "",
     type: "frontend",
@@ -127,18 +142,6 @@ export const Navlink = [
     link: "contact",
   },
 ];
-
-function supportsWebP() {
-  const elem = document.createElement('canvas');
-
-  if (!!(elem.getContext && elem.getContext('2d'))) {
-    // was able or not to get WebP representation
-    return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
-  }
-
-  // very old browser like IE 8, canvas not supported
-  return false;
-}
 
 export const projects = [
   {

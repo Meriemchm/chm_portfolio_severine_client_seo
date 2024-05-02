@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Service from "../Service/Service";
+import React from "react";
 import { menuItemSolution } from "../Data/Data";
 import { ServiceSolution } from "../Data/Data";
+const Service = React.lazy(() => import('../Service/Service'));
 const SolutionBar = () => {
   return (
     <>

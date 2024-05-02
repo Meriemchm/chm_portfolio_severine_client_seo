@@ -10,10 +10,10 @@ const Presentation = () => {
             <div className="h-0.5 flex-grow bg-primary "></div>
           </div>
 
-          <h2 className="text-4xl md:text-7xl font-bold py-5 ">
+          <h2 className="text-3xl md:text-6xl font-bold py-3 md:py-5 ">
             Allagui Séverine
           </h2>
-          <p className="text-primary text-right text-sm md:text-lg" rel="preload">
+          <p className="text-primary md:text-right text-sm md:text-lg" rel="preload">
             Spécialisée dans la communication et le développement web
           </p>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { Navlink } from "../Data/Data";
@@ -11,7 +11,7 @@ const NavBar = () => {
     <div
       className={`bg-white flex justify-between items-center w-full h-20  px-4 md:px-20 fixed z-10`}
     >
-      <img src="PNG.png"  alt="profile"  />
+      <img src="PNG.png" className="h-14"  alt="profile"  />
 
       <ul className="hidden 2xl:flex items-center">
         {Navlink.map(({ id, link }) => {
