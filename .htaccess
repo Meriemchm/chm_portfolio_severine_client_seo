@@ -1,3 +1,0 @@
-<IfModule mod_brotli.c>
-    AddOutputFilterByType BROTLI_COMPRESS text/javascript
-</IfModule>
